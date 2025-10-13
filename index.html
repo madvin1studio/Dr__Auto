@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dr Auto | خبير ميكانيك السيارات</title>
+  <title>Dr Auto | Car Mechanics Expert</title>
 
-  <!-- الخطوط والأيقونات -->
+  <!-- Fonts & Icons -->
   <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
@@ -33,14 +33,14 @@
     body {
       font-family: 'Tajawal', sans-serif;
       text-align: center;
-      direction: rtl;
+      direction: ltr;
       color: var(--light);
       background: var(--dark);
       overflow-x: hidden;
       scroll-behavior: smooth;
     }
 
-    /* تصميم الخلفية */
+    /* Background Design */
     .background {
       position: fixed;
       top: 0;
@@ -111,7 +111,7 @@
       50% { transform: translateY(-20px) rotate(10deg); }
     }
 
-    /* التصميم العام */
+    /* General Design */
     .container {
       max-width: 1200px;
       margin: 0 auto;
@@ -122,7 +122,7 @@
       padding: 80px 0;
     }
 
-    /* الهيدر */
+    /* Header */
     header {
       padding: 50px 0 30px;
       position: relative;
@@ -195,7 +195,7 @@
       box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
     }
 
-    /* الروابط */
+    /* Links */
     .links {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -238,7 +238,7 @@
     }
 
     .link-text {
-      text-align: right;
+      text-align: left;
       flex: 1;
     }
 
@@ -395,6 +395,65 @@
       font-weight: 700;
     }
 
+    .audience-stats {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 25px;
+      margin-top: 30px;
+      margin-bottom: 40px;
+    }
+
+    .audience-card {
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 15px;
+      padding: 25px;
+      text-align: left;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      transition: all 0.3s ease;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .audience-card:hover {
+      transform: translateY(-5px);
+      border-color: var(--primary);
+      box-shadow: 0 10px 25px rgba(0, 242, 254, 0.2);
+    }
+
+    .audience-title {
+      font-size: 1.3rem;
+      font-weight: 700;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: var(--primary);
+    }
+
+    .country-list, .age-list {
+      list-style: none;
+    }
+
+    .country-item, .age-item {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px 0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .country-item:last-child, .age-item:last-child {
+      border-bottom: none;
+    }
+
+    .country-name, .age-range {
+      font-weight: 500;
+    }
+
+    .country-percentage, .age-percentage {
+      color: var(--accent);
+      font-weight: 600;
+    }
+
     .contact-btn {
       display: inline-block;
       background: var(--gradient);
@@ -485,7 +544,7 @@
     .badge {
       position: absolute;
       top: 15px;
-      left: 15px;
+      right: 15px;
       background: rgba(255, 255, 255, 0.9);
       color: #0b0b0b;
       padding: 5px 12px;
@@ -516,7 +575,7 @@
     }
 
     .price-option:first-child {
-      border-left: 1px solid rgba(0, 0, 0, 0.2);
+      border-right: 1px solid rgba(0, 0, 0, 0.2);
     }
 
     .price-type {
@@ -560,7 +619,7 @@
     }
 
     .feature i {
-      margin-left: 10px;
+      margin-right: 10px;
       margin-top: 3px;
       color: #16a34a;
       flex-shrink: 0;
@@ -671,7 +730,7 @@
       font-weight: 600;
     }
 
-    /* الفوتر */
+    /* Footer */
     footer {
       padding: 40px 0;
       background: rgba(0, 0, 0, 0.5);
@@ -701,7 +760,7 @@
       color: #ff8c1f;
     }
 
-    /* تصميم متجاوب */
+    /* Responsive Design */
     @media (max-width: 768px) {
       .title {
         font-size: 2rem;
@@ -739,9 +798,13 @@
       }
       
       .price-option:first-child {
-        border-left: none;
+        border-right: none;
         border-bottom: 1px solid rgba(0, 0, 0, 0.2);
         padding-bottom: 15px;
+      }
+      
+      .audience-stats {
+        grid-template-columns: 1fr;
       }
     }
 
@@ -758,7 +821,7 @@
   </style>
 </head>
 <body>
-  <!-- الخلفية المتحركة -->
+  <!-- Animated Background -->
   <div class="background"></div>
   <div class="floating-shapes">
     <div class="shape"></div>
@@ -767,16 +830,16 @@
     <div class="shape"></div>
   </div>
 
-  <!-- الهيدر -->
+  <!-- Header -->
   <header>
     <div class="container">
-      <!-- تم إزالة مكان اللوجو -->
+      <!-- Logo area removed -->
       
       <div class="hero">
         <div class="profile-container">
           <div class="profile-box">
-            <!-- تم استبدال صورة الملف الافتراضية بالصورة الشخصية -->
-            <img src="amine.png" alt="Dr Auto - خبير ميكانيك السيارات" class="profile-img">
+            <!-- Replaced default profile image with personal photo -->
+            <img src="amine.png" alt="Dr Auto - Car Mechanics Expert" class="profile-img">
           </div>
         </div>
         
@@ -785,7 +848,7 @@
           Expert in modern mechanical engineering for cars<br>
           Mechanical content and car care tips<br><br>
           
-          خبير في الهندسة الميكانيكية الحديثة ،محتوى ميكانيك و نصائح للاعتناء بالسيارات
+          Expert in modern mechanical engineering, mechanical content and car care tips
         </div>
         
         <div class="links">
@@ -794,8 +857,8 @@
               <i class="fab fa-facebook-f"></i>
             </div>
             <div class="link-text">
-              <div class="link-title">فيسبوك</div>
-              <div class="link-desc">تابعني على فيسبوك</div>
+              <div class="link-title">Facebook</div>
+              <div class="link-desc">Follow me on Facebook</div>
             </div>
           </a>
           
@@ -804,8 +867,8 @@
               <i class="fab fa-instagram"></i>
             </div>
             <div class="link-text">
-              <div class="link-title">إنستغرام</div>
-              <div class="link-desc">شاهد محتواي على إنستغرام</div>
+              <div class="link-title">Instagram</div>
+              <div class="link-desc">Watch my content on Instagram</div>
             </div>
           </a>
           
@@ -814,8 +877,8 @@
               <i class="fab fa-whatsapp"></i>
             </div>
             <div class="link-text">
-              <div class="link-title">واتساب</div>
-              <div class="link-desc">تواصل معي مباشرة</div>
+              <div class="link-title">WhatsApp</div>
+              <div class="link-desc">Contact me directly</div>
             </div>
           </a>
           
@@ -824,8 +887,8 @@
               <i class="fa-solid fa-chart-line"></i>
             </div>
             <div class="link-text">
-              <div class="link-title">ميديا كيت</div>
-              <div class="link-desc">إحصائيات وأداء المحتوى</div>
+              <div class="link-title">Media Kit</div>
+              <div class="link-desc">Content statistics and performance</div>
             </div>
           </a>
         </div>
@@ -835,7 +898,7 @@
             <div id="qrcode"></div>
             <div class="qr-text">
               <i class="fa-solid fa-rotate"></i>
-              <span>امسح الكود</span>
+              <span>Scan the code</span>
             </div>
           </div>
         </div>
@@ -846,41 +909,95 @@
   <!-- Media Kit Section -->
   <section class="media-kit" id="media-kit">
     <div class="container">
-      <h2 class="section-title">📊 Media Kit</h2>
-      <p class="section-subtitle">نظرة عامة على أداء محتوى Dr Auto خلال آخر 30 يومًا على وسائل التواصل الإجتماعي 🚀</p>
+      <!-- Changed the icon from 📊 to 📈 -->
+      <h2 class="section-title">📈 Media Kit</h2>
+      <p class="section-subtitle">Overview of Dr Auto's content performance over the last 10 days on social media 🚀</p>
       
       <div class="stats">
         <div class="stat-card">
           <div class="stat-icon">
             <i class="fa-solid fa-eye"></i>
           </div>
-          <h3 class="stat-title">👀 المشاهدات</h3>
+          <h3 class="stat-title">👀 Views</h3>
           <div class="stat-value">8.3M</div>
-          <p class="stat-desc"><span class="highlight">+925%</span> مقارنة بـ 30 يومًا السابقة</p>
+          <p class="stat-desc"><span class="highlight">+925%</span> compared to previous 10 days</p>
         </div>
         
         <div class="stat-card">
           <div class="stat-icon">
             <i class="fa-solid fa-chart-line"></i>
           </div>
-          <h3 class="stat-title">🎯 الوصول</h3>
+          <h3 class="stat-title">🎯 Reach</h3>
           <div class="stat-value">496,008</div>
-          <p class="stat-desc"><span class="highlight">+5,902%</span> زيادة في الوصول</p>
+          <p class="stat-desc"><span class="highlight">+5,902%</span> increase in reach</p>
         </div>
         
         <div class="stat-card">
           <div class="stat-icon">
             <i class="fa-solid fa-users"></i>
           </div>
-          <h3 class="stat-title">📈 مصدر المشاهدات</h3>
+          <h3 class="stat-title">📈 View Source</h3>
           <div class="stat-value">82.3%</div>
-          <p class="stat-desc">من غير المتابعين</p>
-          <p class="stat-desc">17.7% من المتابعين</p>
+          <p class="stat-desc">From non-followers</p>
+          <p class="stat-desc">17.7% from followers</p>
         </div>
       </div>
       
-      <a href="https://wa.me/21621069001?text=مرحبًا%20دكتور%20أوتو%20🚗%20أود%20التعاون%20معك!" class="contact-btn" target="_blank">
-        🤝 تواصل للتعاون
+      <!-- Added Audience Data Section -->
+      <div class="audience-stats">
+        <div class="audience-card">
+          <h3 class="audience-title">
+            <i class="fa-solid fa-globe"></i>
+            Top Countries
+          </h3>
+          <ul class="country-list">
+            <li class="country-item">
+              <span class="country-name">Tunisia</span>
+              <span class="country-percentage">86.7%</span>
+            </li>
+            <li class="country-item">
+              <span class="country-name">France</span>
+              <span class="country-percentage">3.1%</span>
+            </li>
+            <li class="country-item">
+              <span class="country-name">Algeria</span>
+              <span class="country-percentage">2.6%</span>
+            </li>
+            <li class="country-item">
+              <span class="country-name">Italy</span>
+              <span class="country-percentage">2.3%</span>
+            </li>
+          </ul>
+        </div>
+        
+        <div class="audience-card">
+          <h3 class="audience-title">
+            <i class="fa-solid fa-user-group"></i>
+            Age Ranges
+          </h3>
+          <ul class="age-list">
+            <li class="age-item">
+              <span class="age-range">18-24 years</span>
+              <span class="age-percentage">32.4%</span>
+            </li>
+            <li class="age-item">
+              <span class="age-range">25-34 years</span>
+              <span class="age-percentage">45.7%</span>
+            </li>
+            <li class="age-item">
+              <span class="age-range">35-44 years</span>
+              <span class="age-percentage">15.2%</span>
+            </li>
+            <li class="age-item">
+              <span class="age-range">45+ years</span>
+              <span class="age-percentage">6.7%</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      
+      <a href="https://wa.me/21621069001?text=Hello%20Dr%20Auto%20🚗%20I%20would%20like%20to%20collaborate%20with%20you!" class="contact-btn" target="_blank">
+        🤝 Contact for Collaboration
       </a>
     </div>
   </section>
@@ -888,229 +1005,229 @@
   <!-- Pricing Packages Section -->
   <section class="pricing-section" id="pricing">
     <div class="container">
-      <h2 class="section-title">باقات المحتوى الاحترافية</h2>
-      <p class="section-subtitle">عزز وجودك الرقمي مع محتوى مخصص ومبتكر يناسب احتياجات عملك</p>
+      <h2 class="section-title">Professional Content Packages</h2>
+      <p class="section-subtitle">Enhance your digital presence with customized and innovative content that suits your business needs</p>
       
       <div class="pricing-cards">
         <!-- Bronze Package -->
         <div class="card bronze">
           <div class="card-header">
-            <span class="badge">الأساسية</span>
-            <h2 class="plan-name">برونزية</h2>
+            <span class="badge">Basic</span>
+            <h2 class="plan-name">Bronze</h2>
             <div class="price-container">
               <div class="price-option">
-                <div class="price-type">العمل الفردي</div>
+                <div class="price-type">Individual Work</div>
                 <div class="price">199 TND</div>
               </div>
               <div class="price-option">
-                <div class="price-type">العمل مع الفريق</div>
+                <div class="price-type">Team Work</div>
                 <div class="price">399 TND</div>
               </div>
             </div>
-            <p class="price-note">حزمة مثالية للبدء بوجود رقمي فعال</p>
+            <p class="price-note">Ideal package to start with an effective digital presence</p>
           </div>
           <div class="card-body">
             <ul class="features">
               <li class="feature">
                 <i class="fas fa-check-circle"></i>
-                <span>1 ريل احترافي (30 ثانية)</span>
+                <span>1 professional reel (30 seconds)</span>
               </li>
               <li class="feature">
                 <i class="fas fa-check-circle"></i>
-                <span>2 منشور احترافي بتصميم جذاب</span>
+                <span>2 professional posts with attractive design</span>
               </li>
               <li class="feature">
                 <i class="fas fa-check-circle"></i>
-                <span>تحميل المحتوى على 3 منصات</span>
+                <span>Upload content on 3 platforms</span>
               </li>
             </ul>
             
             <div class="platforms">
               <div class="platform">
-                <i class="fab fa-facebook"></i> فيسبوك
+                <i class="fab fa-facebook"></i> Facebook
               </div>
               <div class="platform">
-                <i class="fab fa-instagram"></i> انستغرام
+                <i class="fab fa-instagram"></i> Instagram
               </div>
               <div class="platform">
-                <i class="fab fa-tiktok"></i> تيك توك
+                <i class="fab fa-tiktok"></i> TikTok
               </div>
             </div>
             
             <div class="team-info">
-              <i class="fas fa-users"></i> خدمة بدون فريق عمل مخصص
+              <i class="fas fa-users"></i> Service without a dedicated team
             </div>
           </div>
           <div class="card-footer">
-            <a href="https://wa.me/21621069001?text=أرغب%20في%20الحصول%20على%20الباقة%20البرونزية%20(العمل%20الفردي)%20بقيمة%20199%20TND" class="btn btn-primary" target="_blank">العمل الفردي - 199 TND</a>
-            <a href="https://wa.me/21621069001?text=أرغب%20في%20الحصول%20على%20الباقة%20البرونزية%20(العمل%20مع%20الفريق)%20بقيمة%20399%20TND" class="btn btn-secondary" target="_blank">العمل مع الفريق - 399 TND</a>
+            <a href="https://wa.me/21621069001?text=I%20want%20the%20Bronze%20package%20(Individual%20Work)%20for%20199%20TND" class="btn btn-primary" target="_blank">Individual Work - 199 TND</a>
+            <a href="https://wa.me/21621069001?text=I%20want%20the%20Bronze%20package%20(Team%20Work)%20for%20399%20TND" class="btn btn-secondary" target="_blank">Team Work - 399 TND</a>
           </div>
         </div>
 
         <!-- Silver Package -->
         <div class="card silver">
           <div class="card-header">
-            <span class="badge">الأكثر طلباً</span>
-            <h2 class="plan-name">فضية</h2>
+            <span class="badge">Most Popular</span>
+            <h2 class="plan-name">Silver</h2>
             <div class="price-container">
               <div class="price-option">
-                <div class="price-type">العمل الفردي</div>
+                <div class="price-type">Individual Work</div>
                 <div class="price">699 TND</div>
               </div>
               <div class="price-option">
-                <div class="price-type">العمل مع الفريق</div>
+                <div class="price-type">Team Work</div>
                 <div class="price">999 TND</div>
               </div>
             </div>
-            <p class="price-note">حزمة شاملة مع فريق عمل متكامل</p>
+            <p class="price-note">Comprehensive package with a full team</p>
           </div>
           <div class="card-body">
             <ul class="features">
               <li class="feature">
                 <i class="fas fa-check-circle"></i>
-                <span>4 ريلات احترافية (30 ثانية لكل منها)</span>
+                <span>4 professional reels (30 seconds each)</span>
               </li>
               <li class="feature">
                 <i class="fas fa-check-circle"></i>
-                <span>8 منشورات احترافية بتصميم متميز</span>
+                <span>8 professional posts with distinctive design</span>
               </li>
               <li class="feature">
                 <i class="fas fa-check-circle"></i>
-                <span>تحميل المحتوى على 3 منصات</span>
+                <span>Upload content on 3 platforms</span>
               </li>
             </ul>
             
             <div class="platforms">
               <div class="platform">
-                <i class="fab fa-facebook"></i> فيسبوك
+                <i class="fab fa-facebook"></i> Facebook
               </div>
               <div class="platform">
-                <i class="fab fa-instagram"></i> انستغرام
+                <i class="fab fa-instagram"></i> Instagram
               </div>
               <div class="platform">
-                <i class="fab fa-tiktok"></i> تيك توك
+                <i class="fab fa-tiktok"></i> TikTok
               </div>
             </div>
             
             <div class="team-info">
-              <i class="fas fa-users"></i> تشمل فريق عمل (تصوير ومونتاج)
+              <i class="fas fa-users"></i> Includes a team (filming and editing)
             </div>
           </div>
           <div class="card-footer">
-            <a href="https://wa.me/21621069001?text=أرغب%20في%20الحصول%20على%20الباقة%20الفضية%20(العمل%20الفردي)%20بقيمة%20699%20TND" class="btn btn-primary" target="_blank">العمل الفردي - 699 TND</a>
-            <a href="https://wa.me/21621069001?text=أرغب%20في%20الحصول%20على%20الباقة%20الفضية%20(العمل%20مع%20الفريق)%20بقيمة%20999%20TND" class="btn btn-secondary" target="_blank">العمل مع الفريق - 999 TND</a>
+            <a href="https://wa.me/21621069001?text=I%20want%20the%20Silver%20package%20(Individual%20Work)%20for%20699%20TND" class="btn btn-primary" target="_blank">Individual Work - 699 TND</a>
+            <a href="https://wa.me/21621069001?text=I%20want%20the%20Silver%20package%20(Team%20Work)%20for%20999%20TND" class="btn btn-secondary" target="_blank">Team Work - 999 TND</a>
           </div>
         </div>
 
         <!-- Gold Package -->
         <div class="card gold">
           <div class="card-header">
-            <span class="badge">احترافية</span>
-            <h2 class="plan-name">ذهبية</h2>
+            <span class="badge">Professional</span>
+            <h2 class="plan-name">Gold</h2>
             <div class="price-container">
               <div class="price-option">
-                <div class="price-type">العمل الفردي</div>
-                <div class="price">1199 TND</div>
+                <div class="price-type">Individual Work</div>
+                <div class="price">1999 TND</div>
               </div>
               <div class="price-option">
-                <div class="price-type">العمل مع الفريق</div>
+                <div class="price-type">Team Work</div>
                 <div class="price">3199 TND</div>
               </div>
             </div>
-            <p class="price-note">حل متكامل لهوية رقمية متميزة</p>
+            <p class="price-note">Complete solution for a distinguished digital identity</p>
           </div>
           <div class="card-body">
             <ul class="features">
               <li class="feature">
                 <i class="fas fa-check-circle"></i>
-                <span>8 ريلات احترافية (30 ثانية لكل منها)</span>
+                <span>8 professional reels (30 seconds each)</span>
               </li>
               <li class="feature">
                 <i class="fas fa-check-circle"></i>
-                <span>16 منشور احترافي بتصميم إبداعي</span>
+                <span>16 professional posts with creative design</span>
               </li>
               <li class="feature">
                 <i class="fas fa-check-circle"></i>
-                <span>تحميل المحتوى على 3 منصات</span>
+                <span>Upload content on 3 platforms</span>
               </li>
             </ul>
             
             <div class="platforms">
               <div class="platform">
-                <i class="fab fa-facebook"></i> فيسبوك
+                <i class="fab fa-facebook"></i> Facebook
               </div>
               <div class="platform">
-                <i class="fab fa-instagram"></i> انستغرام
+                <i class="fab fa-instagram"></i> Instagram
               </div>
               <div class="platform">
-                <i class="fab fa-tiktok"></i> تيك توك
+                <i class="fab fa-tiktok"></i> TikTok
               </div>
             </div>
             
             <div class="team-info">
-              <i class="fas fa-users"></i> تشمل فريق عمل احترافي (تصوير، مونتاج، إخراج)
+              <i class="fas fa-users"></i> Includes a professional team (filming, editing, directing)
             </div>
           </div>
           <div class="card-footer">
-            <a href="https://wa.me/21621069001?text=أرغب%20في%20الحصول%20على%20الباقة%20الذهبية%20(العمل%20الفردي)%20بقيمة%201999%20TND" class="btn btn-primary" target="_blank">العمل الفردي - 1999 TND</a>
-            <a href="https://wa.me/21621069001?text=أرغب%20في%20الحصول%20على%20الباقة%20الذهبية%20(العمل%20مع%20الفريق)%20بقيمة%203199%20TND" class="btn btn-secondary" target="_blank">العمل مع الفريق - 3199 TND</a>
+            <a href="https://wa.me/21621069001?text=I%20want%20the%20Gold%20package%20(Individual%20Work)%20for%201999%20TND" class="btn btn-primary" target="_blank">Individual Work - 1999 TND</a>
+            <a href="https://wa.me/21621069001?text=I%20want%20the%20Gold%20package%20(Team%20Work)%20for%203199%20TND" class="btn btn-secondary" target="_blank">Team Work - 3199 TND</a>
           </div>
         </div>
       </div>
 
       <div class="comparison">
-        <h2>مقارنة بين الباقات</h2>
+        <h2>Package Comparison</h2>
         <table class="comparison-table">
           <thead>
             <tr>
-              <th>الميزة</th>
-              <th>الباقة البرونزية</th>
-              <th>الباقة الفضية</th>
-              <th>الباقة الذهبية</th>
+              <th>Feature</th>
+              <th>Bronze Package</th>
+              <th>Silver Package</th>
+              <th>Gold Package</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td>السعر (العمل الفردي)</td>
+              <td>Price (Individual Work)</td>
               <td>199 TND</td>
               <td>699 TND</td>
               <td>1999 TND</td>
             </tr>
             <tr>
-              <td>السعر (العمل مع الفريق)</td>
+              <td>Price (Team Work)</td>
               <td>399 TND</td>
               <td>999 TND</td>
               <td>3199 TND</td>
             </tr>
             <tr>
-              <td>عدد الريلز</td>
-              <td>1 ريل (30 ثانية)</td>
-              <td>4 ريلات (30 ثانية لكل منها)</td>
-              <td>8 ريلات (30 ثانية لكل منها)</td>
+              <td>Number of Reels</td>
+              <td>1 reel (30 seconds)</td>
+              <td>4 reels (30 seconds each)</td>
+              <td>8 reels (30 seconds each)</td>
             </tr>
             <tr>
-              <td>عدد المنشورات</td>
-              <td>2 منشور</td>
-              <td>8 منشورات</td>
-              <td>16 منشور</td>
+              <td>Number of Posts</td>
+              <td>2 posts</td>
+              <td>8 posts</td>
+              <td>16 posts</td>
             </tr>
             <tr>
-              <td>منصات النشر</td>
-              <td>3 منصات</td>
-              <td>3 منصات</td>
-              <td>3 منصات</td>
+              <td>Publishing Platforms</td>
+              <td>3 platforms</td>
+              <td>3 platforms</td>
+              <td>3 platforms</td>
             </tr>
             <tr class="highlight">
-              <td>فريق العمل</td>
-              <td>بدون فريق عمل</td>
-              <td>فريق تصوير ومونتاج</td>
-              <td>فريق عمل احترافي متكامل</td>
+              <td>Team</td>
+              <td>No team</td>
+              <td>Filming and editing team</td>
+              <td>Full professional team</td>
             </tr>
             <tr>
-              <td>مستوى الجودة</td>
-              <td>جيد</td>
-              <td>جيد جداً</td>
-              <td>ممتاز واحترافي</td>
+              <td>Quality Level</td>
+              <td>Good</td>
+              <td>Very Good</td>
+              <td>Excellent and Professional</td>
             </tr>
           </tbody>
         </table>
@@ -1118,22 +1235,22 @@
     </div>
   </section>
 
-  <!-- الفوتر -->
+  <!-- Footer -->
   <footer>
     <div class="container">
-      <p>Dr.Auto - خدمات المحتوى الاحترافية</p>
+      <p>Dr.Auto - Professional Content Services</p>
       <div class="contact-info">
-        <a href="mailto:dr.automecanique@gmail.com">
-          <i class="fas fa-envelope"></i> contact@drautostudio.com
+        <a href="mailto:contact@drautostudio.com">
+          <i class="fas fa-envelope"></i> dr.automecanique@gmail.com
         </a>
         <a href="tel:+21621069001">
           <i class="fas fa-phone"></i> +216 21 069 001
         </a>
         <a href="https://wa.me/21621069001">
-          <i class="fab fa-whatsapp"></i> واتساب
+          <i class="fab fa-whatsapp"></i> WhatsApp
         </a>
       </div>
-      <p class="copyright">© 2025 Dr Auto. جميع الحقوق محفوظة.</p>
+      <p class="copyright">© 2025 Dr Auto. All rights reserved.</p>
     </div>
   </footer>
 
